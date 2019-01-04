@@ -1,4 +1,6 @@
-def measureTrappedWater(arr):
+# a function that takes a list of positive integers as argument. The elements represnt the lengths of the towers
+# it returns the number of units of water trapped between the towers
+def measureTrappedWater(lst):
 	i = 0
 	trappedWaterUnits = 0
 	j = len(arr) - 1
@@ -19,5 +21,5 @@ def measureTrappedWater(arr):
 			trappedWaterUnits += waterUnits
 	return trappedWaterUnits
 
-l = list(input("input the list of items (comma separated): "))
+l = list(input("input the list of items (comma separated): ")) # example: 0,1,0,0,2,0,4,0,3,0,0,2,1,0,3,0
 print "The quanity of trapped water units is :", measureTrappedWater(l)
